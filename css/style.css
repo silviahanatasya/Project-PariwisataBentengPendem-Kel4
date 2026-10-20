@@ -1,0 +1,53 @@
+.hero-benteng {
+    background: linear-gradient(rgba(20, 30, 48, 0.8), rgba(36, 59, 85, 0.8)), url('../images/benteng.jpg') center/cover;
+    color: white;
+    text-align: center;
+    padding: 75px 20px;
+    border-radius: 12px;
+    margin-bottom: 35px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.hero-benteng h2 {
+    font-size: 34px;
+    margin-bottom: 12px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.hero-benteng p {
+    font-size: 16px;
+    max-width: 650px;
+    margin: 0 auto 22px auto;
+    opacity: 0.95;
+    line-height: 1.7;
+}
+
+.btn-info-benteng {
+    display: inline-block;
+    padding: 10px 26px;
+    background-color: #ffc107;
+    color: #212529;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.btn-info-benteng:hover {
+    background-color: #ffca2c;
+    transform: translateY(-2px);
+    text-decoration: none;
+}
+
+.section-title {
+    font-size: 24px;
+    margin-bottom: 18px;
+    color: #1f3864;
+    border-left: 5px solid #ffc107;
+    padding-left: 10px;
+}
+
+body.gelap .section-title {
+    color: #ffffff;
+}
