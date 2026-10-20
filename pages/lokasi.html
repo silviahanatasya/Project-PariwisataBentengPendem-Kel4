@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Lokasi dan Rute Perjalanan Menuju Benteng Pendem Cilacap - Jam buka operasional, peta navigasi, akses dari stasiun dan terminal bus, serta panduan FAQ.">
+  <title>Lokasi, Rute & Jam Buka - Benteng Pendem Cilacap</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/fasilitas.css">
+</head>
+<body>
+
+  <!-- =================================================================
+       HEADER / NAVBAR (Shared Layout)
+       ================================================================= -->
+  <header class="navbar">
+    <div class="container navbar-container">
+      <a href="../index.html" class="nav-brand">
+        <div class="nav-logo-badge">BP</div>
+        <div class="nav-title">
+          <span class="nav-title-main">Benteng Pendem</span>
+          <span class="nav-title-sub">Cilacap • Jawa Tengah</span>
+        </div>
+      </a>
+
+      <button class="nav-toggle" aria-label="Buka Menu Navigasi" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="../index.html" class="nav-link">Beranda</a></li>
+          <li><a href="sejarah.html" class="nav-link">Sejarah</a></li>
+          <li><a href="galeri.html" class="nav-link">Galeri</a></li>
+          <li><a href="fasilitas.html" class="nav-link">Fasilitas</a></li>
+          <li><a href="lokasi.html" class="nav-link active">Lokasi</a></li>
+          <li><a href="kontak.html" class="nav-link">Buku Tamu</a></li>
+          <li class="nav-cta">
+            <a href="tiket.html" class="btn btn-accent btn-sm">Beli Tiket</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Page Hero Banner -->
+    <section class="page-hero">
+      <div class="container">
+        <div class="breadcrumb">
+          <a href="../index.html">Beranda</a> &rsaquo; <span>Lokasi & Akses</span>
+        </div>
+        <h1>Peta Lokasi & Panduan Rute</h1>
+        <p>Petunjuk arah navigasi menuju cagar budaya Benteng Pendem di pesisir Pantai Teluk Penyu Cilacap Selatan.</p>
+      </div>
+    </section>
+
+    <!-- LIVE STATUS & MAP SECTION -->
+    <section class="section">
+      <div class="container">
+        <!-- Live Status Jam Buka (Dijalankan Otomatis via JS) -->
+        <div class="status-operational-card">
+          <div class="status-indicator-wrap">
+            <div class="status-dot" id="statusDot"></div>
+            <div class="status-text">
+              <h4 id="statusTitle">Memeriksa Jam Operasional...</h4>
+              <p id="statusDesc">Jam Buka Reguler: 08.00 - 18.00 WIB setiap hari (Senin s.d. Minggu & Hari Libur Nasional).</p>
+            </div>
+          </div>
+          <div>
+            <button class="btn btn-outline btn-sm" id="copyAddressBtn">📋 Salin Alamat Lengkap</button>
+          </div>
+        </div>
+
+        <div class="map-route-split">
+          <!-- Kolom Peta -->
+          <div class="map-embed-wrapper">
+            <div class="map-embed-placeholder">
+              <div style="font-size: 3rem; margin-bottom: 1rem;">🗺️</div>
+              <h3 style="font-size: 1.4rem; font-family: var(--font-heading); margin-bottom: 0.5rem;">Kawasan Wisata Benteng Pendem</h3>
+              <p style="font-size: 0.9rem; max-width: 420px; color: #bae6fd; margin-bottom: 1.5rem;">
+                Jl. Benteng, Kebonjati, Kec. Cilacap Selatan, Kabupaten Cilacap, Jawa Tengah 53211. Bersebelahan langsung dengan pintu gerbang Pantai Teluk Penyu.
+              </p>
+              <a href="https://maps.google.com/?q=Benteng+Pendem+Cilacap" target="_blank" rel="noopener noreferrer" class="btn btn-accent btn-sm">
+                Buka di Google Maps &nearr;
+              </a>
+            </div>
+          </div>
+
+          <!-- Kolom Rute Transportasi -->
+          <div class="transport-steps">
+            <h3 style="font-family: var(--font-heading); color: var(--color-primary-dark); font-size: 1.4rem; margin-bottom: 0.5rem;">
+              Panduan Akses Transportasi
+            </h3>
+
+            <!-- Kereta Api -->
+            <div class="transport-card">
+              <div class="transport-icon">🚆</div>
+              <div class="transport-details">
+                <h4>Dari Stasiun Kereta Api Cilacap (CP)</h4>
+                <p>Hanya berjarak sekitar <strong>3,5 km (10 menit perjalanan)</strong>. Anda dapat menggunakan angkutan kota (Angkot), taksi online (Gojek/Grab), atau becak wisata Cilacap menuju arah Pantai Teluk Penyu.</p>
+              </div>
+            </div>
+
+            <!-- Terminal Bus -->
+            <div class="transport-card">
+              <div class="transport-icon">🚌</div>
+              <div class="transport-details">
+                <h4>Dari Terminal Bus Cilacap (Bangga Bangun Desa)</h4>
+                <p>Berjarak sekitar <strong>7,5 km (18 menit perjalanan)</strong>. Tersedia angkutan kota trayek jalur Teluk Penyu atau transportasi roda empat online yang siap mengantar langsung ke pintu masuk.</p>
+              </div>
+            </div>
+
+            <!-- Kendaraan Pribadi -->
+            <div class="transport-card">
+              <div class="transport-icon">🚗</div>
+              <div class="transport-details">
+                <h4>Menggunakan Mobil / Motor Pribadi</h4>
+                <p>Arahkan kendaraan ke pusat kota Cilacap menuju Jl. Jenderal Sudirman &rarr; Jl. Laut &rarr; masuk gapura Pantai Teluk Penyu &rarr; ikuti papan penunjuk arah Benteng Pendem di sisi timur pantai.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ SECTION (Accordion Interaktif) -->
+    <section class="section" id="faq" style="background-color: #f1f5f9;">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Tanya Jawab</span>
+          <h2 class="section-title">Pertanyaan Sering Diajukan (FAQ)</h2>
+          <p class="section-desc">Jawaban praktis seputar kunjungan wisata, aturan, serta fasilitas di Benteng Pendem Cilacap.</p>
+        </div>
+
+        <div class="faq-list">
+          <!-- FAQ 1 -->
+          <div class="faq-item">
+            <button class="faq-btn" aria-expanded="false">
+              <span>Apakah Benteng Pendem aman dikunjungi anak-anak dan lansia?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                Sangat aman! Seluruh jalan setapak telah dipaving dengan baik, area benteng dilengkapi pagar pembatas pada titik lereng, dan kawanan rusa tutul sangat bersahabat dengan anak-anak.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="faq-item">
+            <button class="faq-btn" aria-expanded="false">
+              <span>Apakah boleh membawa makanan dan minuman dari luar?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                Pengunjung diperbolehkan membawa makanan ringan dan minuman pribadi untuk dinikmati di gazebo taman. Namun, sangat dilarang membuang sampah sembarangan dan dilarang memberikan makanan manusia kepada kawanan rusa.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="faq-item">
+            <button class="faq-btn" aria-expanded="false">
+              <span>Apakah ada pemandu wisata (tour guide) di lokasi?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                Ya, pengelola cagar budaya menyediakan pemandu lokal bersertifikat yang siap mendampingi rombongan sekolah atau instansi untuk menceritakan detail sejarah setiap ruangan militer benteng.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="faq-item">
+            <button class="faq-btn" aria-expanded="false">
+              <span>Berapa biaya tiket masuk dan tarif parkir resmi?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                Tiket masuk dewasa hanya Rp 10.000/orang, anak-anak Rp 5.000/orang. Parkir motor Rp 3.000 dan mobil Rp 5.000. Anda bisa menghitung estimasi total rombongan pada halaman simulasi tiket kami.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =================================================================
+       FOOTER (Shared Layout)
+       ================================================================= -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <h3>Benteng Pendem Cilacap</h3>
+          <p>
+            Objek Wisata Cagar Budaya Sejarah & Edukasi Pesisir di Cilacap Selatan, Jawa Tengah. Dilindungi oleh UU Cagar Budaya Republik Indonesia.
+          </p>
+          <div class="footer-team-badge">
+            Proyek PWD Sem 3 • Modul Lokasi & Rute (Anggota 3)
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Jelajahi</h4>
+          <ul class="footer-links">
+            <li><a href="../index.html">Beranda</a></li>
+            <li><a href="sejarah.html">Sejarah Benteng</a></li>
+            <li><a href="galeri.html">Galeri Foto</a></li>
+            <li><a href="fasilitas.html">Fasilitas & Rusa</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Informasi</h4>
+          <ul class="footer-links">
+            <li><a href="lokasi.html">Lokasi & Rute</a></li>
+            <li><a href="tiket.html">Harga Tiket Masuk</a></li>
+            <li><a href="kontak.html">Buku Tamu / Saran</a></li>
+            <li><a href="lokasi.html#faq">FAQ Wisatawan</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Kontak & Jam Buka</h4>
+          <ul class="footer-contact">
+            <li>📍 Jl. Benteng, Kebonjati, Cilacap Selatan, Cilacap, Jateng 53211</li>
+            <li>🕒 Buka Setiap Hari: 08.00 - 18.00 WIB</li>
+            <li>📞 Telp Pengelola: (0282) 534xxx</li>
+            <li>✉️ Email: info@bentengpendemcilacap.local</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; <span class="current-year">2026</span> Benteng Pendem Cilacap. Semua Hak Cipta Dilindungi.</div>
+        <div>Dikelola oleh Tim Pengembang Mahasiswa PWD Sem 3</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="../js/global.js"></script>
+  <script src="../js/lokasi.js"></script>
+</body>
+</html>
