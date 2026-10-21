@@ -1,52 +1,61 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Wisata Benteng Pendem Cilacap</title>
-    <link rel="stylesheet" href="css/style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beranda - Wisata Benteng Pendem Cilacap</title>
+  
+  <link rel="stylesheet" href="css/style.css">
+  
+  <link rel="stylesheet" href="css/beranda.css">
 </head>
 <body>
-    <header class="navbar">
-        <h1 class="logo">Wisata Benteng Pendem</h1>
-        <nav>
-            <ul class="menu">
-                <li><a href="index.html">Beranda</a></li>
-                <li><a href="tentang.html">Tentang</a></li>
-                <li><a href="kontak.html">Kontak</a></li>
-            </ul>
-        </nav>
-        <button id="tombol-tema" type="button">Mode Gelap</button>
-    </header>
 
-    <main>
-        <section class="hero-benteng">
-            <h2>Jejak Sejarah Pertahanan Benteng Pendem</h2>
-            <p>Menelusuri pesona benteng peninggalan kolonial Belanda di pesisir pantai Cilacap yang kaya akan nilai sejarah dan misteri bawah tanah.</p>
-            <a href="#fitur-benteng" id="btn-jelajah-benteng" class="btn-info-benteng">Pelajari Lebih Lanjut</a>
-        </section>
+  <nav class="navbar">
+    <div class="logo">Wisata Benteng Pendem</div>
+    <div class="menu-toggle" id="menuToggle">
+      <span></span><span></span><span></span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" class="active">Beranda</a></li>
+      <li><a href="tentang.html">Tentang</a></li>
+      <li><a href="kontak.html">Kontak</a></li>
+    </ul>
+  </nav>
 
-        <h3 id="fitur-benteng" class="section-title">Daya Tarik Wisata</h3>
-        <div class="grid-card">
-            <div class="card">
-                <h3>Terowongan & Barak</h3>
-                <p>Kompleks benteng pertahanan yang dilengkapi barak prajurit, ruang meriam, serta terowongan bawah tanah yang kokoh.</p>
-            </div>
-            <div class="card">
-                <h3>Wisata Edukasi Sejarah</h3>
-                <p>Tempat yang sangat ideal untuk mempelajari sejarah militer kolonial Belanda dan kisah perjuangan tempo dulu di Cilacap.</p>
-            </div>
-            <div class="card">
-                <h3>Nuansa Pesisir Asri</h3>
-                <p>Terletak di kawasan pantai Teluk Penyu yang dikelilingi pepohonan rindang, memberikan suasana sejuk dan pemandangan eksotis.</p>
-            </div>
-        </div>
-    </main>
+  <header class="hero-beranda">
+    <h1>Benteng Pendem Cilacap</h1>
+    <p>Jelajahi keindahan dan sejarah benteng pertahanan kolonial Belanda di pesisir selatan Cilacap.</p>
+    <a href="#keunggulan" class="btn-hero">Eksplorasi Sekarang</a>
+  </header>
 
-    <footer>
-        <p>&copy; 2026 Wisata Benteng Pendem - Kelompok</p>
-    </footer>
+  <main class="beranda-container" id="keunggulan">
+    <h2 class="beranda-title">Daya Tarik Utama</h2>
+    <div class="beranda-grid">
+      <div class="card-beranda">
+        <div class="icon">🏛️</div>
+        <h3>Wisata Sejarah</h3>
+        <p>Situs benteng kuno peninggalan militer Belanda yang dibangun pada abad ke-19 dengan arsitektur menawan.</p>
+      </div>
+      <div class="card-beranda">
+        <div class="icon">🌿</div>
+        <h3>Suasana Alam</h3>
+        <p>Kawasan wisata yang dikelilingi pepohonan rimbun serta hembusan angin pantai Teluk Penyu yang sejuk.</p>
+      </div>
+      <div class="card-beranda">
+        <div class="icon">📸</div>
+        <h3>Spot Foto Ikonik</h3>
+        <p>Arsitektur benteng bata merah tua dan parit kuno yang sangat estetis untuk mengabadikan momen.</p>
+      </div>
+    </div>
+  </main>
 
-    <script src="js/script.js"></script>
+  <footer>
+    <p>&copy; 2026 Wisata Benteng Pendem Cilacap</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+  
+  <script src="js/beranda.js"></script>
 </body>
 </html>
