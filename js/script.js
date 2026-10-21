@@ -1,19 +1,23 @@
-// JAVASCRIPT KHUSUS HALAMAN BERANDA
+// JAVASCRIPT UTAMA - WISATA BENTENG PENDEM
 
 document.addEventListener('DOMContentLoaded', () => {
-  const btnHero = document.querySelector('.btn-hero');
-  if (btnHero) {
-    btnHero.addEventListener('click', (e) => {
-      const targetId = btnHero.getAttribute('href');
-      if (targetId.startsWith('#')) {
-        e.preventDefault();
-        const targetElement = document.querySelector(targetId);
-        if (targetElement) {
-          targetElement.scrollIntoView({ behavior: 'smooth' });
-        }
-      }
+  // Toggle Menu Navbar Responsive (Mobile)
+  const menuToggle = document.getElementById('menuToggle');
+  const navLinks = document.getElementById('navLinks');
+
+  if (menuToggle && navLinks) {
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
     });
   }
 
-  console.log("Modul Beranda beranda.js berhasil dijalankan.");
+  const contactForm = document.getElementById('contactForm');
+  if (contactForm) {
+    contactForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const nama = document.getElementById('nama').value;
+      alert(`Terima kasih ${nama}, pesan Anda telah berhasil dikirim!`);
+      contactForm.reset();
+    });
+  }
 });

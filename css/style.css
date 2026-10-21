@@ -1,109 +1,207 @@
-/* STYLING KHUSUS HALAMAN BERANDA */
+/* STYLING UTAMA - WISATA BENTENG PENDEM CILACAP */
 
-.hero-beranda {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
-              url('https://images.unsplash.com/photo-1596402184320-417e7178b2cd?q=80&w=1200') center/cover no-repeat;
-  height: 65vh;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f4f6f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1b3b2b;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+.navbar .logo {
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: #e0e0e0;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #4caf50;
+}
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  height: 3px;
+  width: 25px;
+  background-color: #fff;
+  margin: 4px 0;
+  border-radius: 2px;
+}
+
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1596402184320-417e7178b2cd?q=80&w=1200') center/cover;
+  height: 60vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #ffffff;
-  text-align: center;
-  padding: 0 1.5rem;
-}
-
-.hero-beranda h1 {
-  font-size: 2.8rem;
-  margin-bottom: 0.8rem;
-  font-weight: 700;
-  letter-spacing: 1px;
-}
-
-.hero-beranda p {
-  font-size: 1.2rem;
-  max-width: 650px;
-  color: #e0e0e0;
-  margin-bottom: 1.5rem;
-}
-
-.btn-hero {
-  display: inline-block;
-  background-color: #4caf50;
   color: #fff;
-  padding: 0.8rem 1.8rem;
-  border-radius: 25px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-align: center;
+  padding: 0 1rem;
 }
 
-.btn-hero:hover {
-  background-color: #388e3c;
-  transform: translateY(-2px);
+.hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 0.5rem;
 }
 
-.beranda-container {
+.hero p {
+  font-size: 1.2rem;
+  max-width: 600px;
+}
+
+/* --- CONTAINER & CARDS --- */
+.container {
   max-width: 1100px;
-  margin: 3rem auto;
+  margin: 2rem auto;
   padding: 0 1.5rem;
 }
 
-.beranda-title {
+.section-title {
   text-align: center;
-  font-size: 2rem;
+  margin-bottom: 2rem;
   color: #1b3b2b;
-  margin-bottom: 2.5rem;
-  position: relative;
 }
 
-.beranda-grid {
+.grid-3 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
+  gap: 1.5rem;
 }
 
-.card-beranda {
-  background: #ffffff;
-  border-radius: 10px;
-  padding: 2rem;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border-top: 4px solid #1b3b2b;
+.card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
 }
 
-.card-beranda:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+.card:hover {
+  transform: translateY(-5px);
 }
 
-.card-beranda .icon {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-}
-
-.card-beranda h3 {
+.card h3 {
   color: #1b3b2b;
-  font-size: 1.3rem;
-  margin-bottom: 0.8rem;
+  margin-bottom: 0.5rem;
 }
 
-.card-beranda p {
-  color: #555;
-  font-size: 0.95rem;
-  line-height: 1.6;
+.contact-form {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 1.2rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #1b3b2b;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #4caf50;
+}
+
+.btn-submit {
+  background-color: #1b3b2b;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  width: 100%;
+  transition: background 0.3s ease;
+}
+
+.btn-submit:hover {
+  background-color: #2d5a42;
+}
+
+footer {
+  background-color: #1b3b2b;
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 3rem;
 }
 
 @media (max-width: 768px) {
-  .hero-beranda {
-    height: 50vh;
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #1b3b2b;
+    padding: 1rem 0;
+    text-align: center;
   }
 
-  .hero-beranda h1 {
+  .nav-links.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .hero h1 {
     font-size: 2rem;
-  }
-
-  .hero-beranda p {
-    font-size: 1rem;
   }
 }
